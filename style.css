@@ -52,7 +52,7 @@ main {
 .driver-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr); /* Ubah menjadi 6 kolom untuk dua baris */
-  grid-gap: 10px; 
+  grid-gap: 2px; 
 }
 
 .driver-card {
