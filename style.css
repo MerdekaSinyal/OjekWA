@@ -41,7 +41,7 @@ header {
 
 /* Main */
 main {
-  padding: 0px 20px 20px 20px;
+  padding: 0 20px 0 20px; /* Atur padding: atas kanan bawah kiri */
 }
 
 /* Drivers */
@@ -51,6 +51,8 @@ main {
 
 .drivers h2 {
   margin-bottom: 10px;
+      font-size: 18px; /* Atur ukuran font sesuai kebutuhan Anda */
+
 }
 
 .driver-grid {
@@ -75,7 +77,9 @@ main {
 
 .driver-card h3 {
   margin-bottom: 2px;
-  font-size: 10px;  
+  font-size: 10px; 
+      font-weight: normal; /* Mengatur font weight menjadi normal */
+
 }
 
 .driver-card p {
@@ -89,6 +93,8 @@ main {
 
 .food-menu h2 {
   margin-bottom: 10px;
+      font-size: 18px; /* Atur ukuran font sesuai kebutuhan Anda */
+
 }
 
 .filter-bar {
@@ -126,6 +132,8 @@ main {
 .menu-item h3 {
   margin-bottom: 5px;
   font-size: 13px; 
+      font-weight: normal; /* Mengatur font weight menjadi normal */
+
 }
 
 .menu-item p {
