@@ -51,7 +51,7 @@ main {
 
 .drivers h2 {
   margin-bottom: 10px;
-      font-size: 18px; /* Atur ukuran font sesuai kebutuhan Anda */
+      font-size: 17px; /* Atur ukuran font sesuai kebutuhan Anda */
 
 }
 
@@ -93,7 +93,7 @@ main {
 
 .food-menu h2 {
   margin-bottom: 10px;
-      font-size: 18px; /* Atur ukuran font sesuai kebutuhan Anda */
+      font-size: 17px; /* Atur ukuran font sesuai kebutuhan Anda */
 
 }
 
@@ -131,7 +131,7 @@ main {
 
 .menu-item h3 {
   margin-bottom: 5px;
-  font-size: 13px; 
+  font-size: 12px; 
       font-weight: normal; /* Mengatur font weight menjadi normal */
 
 }
