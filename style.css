@@ -100,7 +100,7 @@ main {
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 1px;
 }
 
 .menu-item {
@@ -114,7 +114,7 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .menu-item h3 {
