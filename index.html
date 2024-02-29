@@ -1,119 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opang</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 1px;
-        }
-        .icon {
-            width: calc(25% - 5px);
-            text-align: center;
-            margin: 5px;
-            padding: 5px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .icon img, .icon .icon-img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50px; /* Untuk membuat gambar menjadi kotak */
-        }
-        .icon .icon-text {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Ojek dan Pemesanan Makanan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <div class="slick-slider">
+      <img src="images/slider1.png" alt="Slider 1">
+      <img src="images/slider2.png" alt="Slider 2">
+      <img src="images/slider3.png" alt="Slider 3">
+    </div>
 
-<div class="container">
-    <div class="icon">
-        <a href="https://wa.link/3vigxh" target="_blank" class="whatsapp-link">
-            <div class="icon-img"><img src="driver.jpg" alt="Driver 1"></div>
-            <div class="icon-text">Driver 1</div>
-        </a>
-    </div>
-    <div class="icon">
-        <a href="https://wa.link/3vigxh" target="_blank" class="whatsapp-link">
-            <div class="icon-img"><img src="driver.jpg" alt="Driver 1"></div>
-            <div class="icon-text">Driver 1</div>
-        </a>
-    </div>
-    <div class="icon">
-        <a href="https://wa.link/3vigxh" target="_blank" class="whatsapp-link">
-            <div class="icon-img"><img src="foto/driver1.jpg" alt="Driver 1"></div>
-            <div class="icon-text">Tarmidi</div>
-        </a>
-    </div>
-    <div class="icon">
-        <a href="https://wa.link/3vigxh" target="_blank" class="whatsapp-link">
-            <div class="icon-img"><img src="driver.jpg" alt="Driver 1"></div>
-            <div class="icon-text">Driver 1</div>
-        </a>
-    </div>
-    <div class="icon">
-        <a href="https://wa.link/3vigxh" target="_blank" class="whatsapp-link">
-            <div class="icon-img"><img src="driver.jpg" alt="Driver 1"></div>
-            <div class="icon-text">Driver 1</div>
-        </a>
-    </div>
-    <div class="icon">
-        <a href="https://wa.link/3vigxh" target="_blank" class="whatsapp-link">
-            <div class="icon-img"><img src="driver.jpg" alt="Driver 1"></div>
-            <div class="icon-text">Driver 1</div>
-        </a>
-    </div>
-    <div class="icon">
-        <a href="https://wa.link/3vigxh" target="_blank" class="whatsapp-link">
-            <div class="icon-img"><img src="driver.jpg" alt="Driver 1"></div>
-            <div class="icon-text">Driver 1</div>
-        </a>
-    </div>
-    <div class="icon">
-        <a href="https://wa.link/3vigxh" target="_blank" class="whatsapp-link">
-            <div class="icon-img"><img src="driver.jpg" alt="Driver 1"></div>
-            <div class="icon-text">Driver 1</div>
-        </a>
-    </div>
-    <div class="icon">
-        <a href="https://wa.link/3vigxh" target="_blank" class="whatsapp-link">
-            <div class="icon-img"><img src="driver.jpg" alt="Driver 1"></div>
-            <div class="icon-text">Driver 1</div>
-        </a>
-    </div>
-    <div class="icon">
-        <a href="https://wa.link/3vigxh" target="_blank" class="whatsapp-link">
-            <div class="icon-img"><img src="driver.jpg" alt="Driver 1"></div>
-            <div class="icon-text">Driver 1</div>
-        </a>
-    </div>
-    <div class="icon">
-        <a href="https://wa.link/3vigxh" target="_blank" class="whatsapp-link">
-            <div class="icon-img"><img src="driver.jpg" alt="Driver 1"></div>
-            <div class="icon-text">Driver 1</div>
-        </a>
-    </div>
-    <div class="icon">
-        <a href="https://wa.link/3vigxh" target="_blank" class="whatsapp-link">
-            <div class="icon-img"><img src="driver.jpg" alt="Driver 1"></div>
-            <div class="icon-text">Driver 1</div>
-        </a>
-    </div>
-   
-    <!-- Tambahkan icon dan nama driver sebanyak yang diperlukan -->
-</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-</body>
-</html>
+    <script>
+      $(document).ready(function() {
+        $('.slick-slider').slick({
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          arrows: true
+        }); 
+      });
+    </script>
+    <div class="search-bar">
+      <input type="text" placeholder="Cari driver, restoran, atau menu">
+    </div>
+  </header>
+  <main>
+    <section class="drivers">
+      <h2>Daftar Driver Tersedia</h2>
+      <div class="driver-grid">
+        <div class="driver-card">
+          <img src="images/driver1.png" alt="Driver 1">
+          <h3>John Doe</h3>
+          
+        </div>
+          <div class="driver-card">
+          <img src="images/driver1.png" alt="Driver 2">
+          <h3>Jane Doe</h3>
+        </div>
+        <div class="driver-card">
+          <img src="images/driver1.png" alt="Driver 3">
+          <h3>Peter Smith</h3>
+        </div>
+           <div class="driver-card">
+          <img src="images/driver1.png" alt="Driver 2">
+          <h3>Jane Doe</h3>
+        </div>
+        <div class="driver-card">
+          <img src="images/driver1.png" alt="Driver 3">
+          <h3>Peter Smith</h3>
+        </div>
+        <div class="driver-card">
+          <img src="images/driver1.png" alt="Driver 4">
+          <h3>Sarah Jones</h3>
+        </div>
+        <div class="driver-card">
+          <img src="images/driver1.png" alt="Driver 5">
+          <h3>Michael Brown</h3>
+        </div>
+        <div class="driver-card">
+          <img src="images/driver1.png" alt="Driver 2">
+          <h3>Jane Doe</h3>
+        </div>
+        <div class="driver-card">
+          <img src="images/driver1.png" alt="Driver 3">
+          <h3>Peter Smith</h3>
+        </div>
+        <div class="driver-card">
+          <img src="images/driver1.png" alt="Driver 4">
+          <h3>Sarah Jones</h3>
+        </div>
+        <div class="driver-card">
+          <img src="images/driver1.png" alt="Driver 5">
+          <h3>Michael Brown</h3>
+        </div>
+        <div class="driver-card">
+          <img src="images/driver1.png" alt="Driver 6">
+          <h3>Ashley Williams</h3>
+        </div>
+      </div>
+      <a href="#">Lihat Semua Driver</a>
+    </section>
+    <section class="food-menu">
+      <h2>Menu Makanan dan Minuman</h2>
+      <div class="filter-bar">
+        <select>
+          <option value="">Semua Kategori</option>
+          <option value="makanan">Makanan</option>
+          <option value="minuman">Minuman</option>
+        </select>
+        <select>
+          <option value="">Harga</option>
+          <option value="terendah">Terendah ke Tertinggi</option>
+          <option value="tertinggi">Tertinggi ke Terendah</option>
+        </select>
+        <select>
+          <option value="">Rating</option>
+          <option value="tertinggi">Tertinggi ke Terendah</option>
+          <option value="terendah">Terendah ke Tertinggi</option>
+        </select>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/food1.jpg" alt="Food 1">
+          <h3>Nasi Goreng</h3>
+          <p>Rp 15.000</p>
+          <p>4.8 Bintang</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/food2.jpg" alt="Food 2">
+          <h3>Mie Goreng</h3>
+          <p>Rp 12.000</p>
+          <p>4.7 Bintang</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/food3.jpg" alt="Food 3">
+          <h3>Burger</h3>
+          <p>Rp 20.000</p>
+          <p>4.6 Bintang</p>
+        </div>
+        <div class="menu-item">
