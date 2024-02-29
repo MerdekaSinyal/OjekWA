@@ -97,12 +97,14 @@ main {
   border-radius: 5px;
 }
 
+/* Menu Grid */
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid with a minimum width of 250px */
+  grid-gap: 10px; /* Adjust as needed */
 }
 
+/* Menu Item */
 .menu-item {
   padding: 10px;
   border: 1px solid #ccc;
@@ -111,21 +113,21 @@ main {
 }
 
 .menu-item img {
-  width: 100px;
-  height: 100px;
+  max-width: 100%; /* Ensuring the image does not exceed its container */
+  height: auto; /* Maintaining aspect ratio */
   border-radius: 5px;
-  margin-bottom: 2px;
+  margin-bottom: 5px; /* Adjust as needed */
 }
 
 .menu-item h3 {
   margin-bottom: 5px;
+  font-size: 16px; /* Adjust as needed */
 }
 
 .menu-item p {
   margin-bottom: 0;
-}
-
-/* Footer */
+  font-size: 14px; /* Adjust as needed */
+}/* Footer */
 footer {
   background-color: #f5f5f5;
   padding: 10px;
