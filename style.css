@@ -29,11 +29,11 @@ header {
 .search-bar {
   position: fixed;      /* Stick to the viewport */
   bottom: 0;            /* Position at the bottom */
-  left: 0;              /* Stretch from left edge */
-  right: 0;             /* Stretch to right edge */
+  left: 5px;              /* Stretch from left edge */
+  right: 5px;             /* Stretch to right edge */
   width: 100%;          /* Maintain full-width */
   margin-bottom: 0;     /* Remove any existing bottom margin */
-  padding: 10px 0;      /* Add padding to top and bottom  */
+  padding: 5px 0;      /* Add padding to top and bottom  */
 }
 .search-bar input {
   width: 100%;
