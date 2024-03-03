@@ -1,5 +1,3 @@
-
-
 /* Reset CSS */
 * {
   margin: 0;
@@ -35,9 +33,9 @@ header {
       right: 0;
       max-width: 100vw;
       margin-bottom: 0;
-      padding: 3px 0;
-      margin-left: 3px;
-      margin-right: 3px;
+      padding: 4px 0;
+      margin-left: 4px;
+      margin-right: 4px;
       overflow: visible;
     }
 .search-bar input {
