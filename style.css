@@ -1,5 +1,4 @@
 body {
-  background-image: url('images/wa.webp'); /* Menambahkan background image */
   background-size: cover; /* Menyesuaikan ukuran gambar dengan area halaman */
   background-position: center; /* Posisikan gambar ke tengah */
 }
