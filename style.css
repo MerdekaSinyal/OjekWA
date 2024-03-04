@@ -5,12 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Header */
-header {
-  background-color: #fff;
-  box-shadow: 0 0 0px rgba(0,0,0,0.1);
-}
-
 .slick-slider {
   overflow: hidden;
   position: relative; 
