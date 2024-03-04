@@ -1,4 +1,9 @@
 /* Reset CSS */
+main {
+    margin-top: 0; /* Remove any top margin on main */
+    /* ... other styles */
+}
+
 * {
   margin: 0;
   padding: 0;
