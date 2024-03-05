@@ -10,15 +10,12 @@
   bottom: 0;
   left: 0;
   right: 0;
-  max-width: calc(100vw - 46px); /* Adjusted for margins */
-  margin-bottom: 0;
-  padding: 3px 0;
-  margin-left: 3px;
-  margin-right: 3px;
+  width: 100%; /* Mengatur lebar sesuai dengan lebar layar */
+  max-width: calc(100vw - 6px); /* Mengurangi 6px untuk mengakomodasi padding */
+  padding: 3px; /* Padding 3px di semua sisi */
   overflow-x: visible; /* Ensuring horizontal overflow is visible */
 }
 
-/* If the issue persists, you might want to check for other elements with overflow restrictions or explicitly set overflow for them. */
 
 .search-bar input {
   width: 100%;
