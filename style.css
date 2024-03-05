@@ -38,7 +38,6 @@ main {
   position: sticky;
   top: 0; /* Stick to the very top of the viewport */
   z-index: 1000; /* Ensure drivers stay above other content */
-  background-color: white; /* Optional: Add a background color to make drivers stand out */
   margin-bottom: 3px;
 }
 .drivers h2 {
@@ -58,7 +57,7 @@ main {
   border: 0px solid #ccc;
   border-radius: 5px;
   text-align: center;
-  margin: 2px; 
+  margin: 0px; 
 }
 
 .driver-card img {
@@ -83,7 +82,6 @@ main {
   position: sticky;
   top: 0; /* Stick to the very top of the viewport */
   z-index: 1000; /* Ensure food menu stays above other content */
-  background-color: white; /* Optional: Add a background color to make menu stand out */
   margin-bottom: 3px;
 }
 .food-menu h2 {
@@ -111,7 +109,7 @@ main {
 
 /* Menu Item */
 .menu-item {
-  padding: 10px;
+  padding: 5px;
   border: 0px solid #ccc;
   border-radius: 5px;
   text-align: center;
@@ -121,7 +119,7 @@ main {
   max-width: 100%; 
   height: auto; 
   border-radius: 5px;
-  margin-bottom: 5px; 
+  margin-bottom: 3px; 
 }
 
 .menu-item h3 {
