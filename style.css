@@ -1,7 +1,3 @@
-body {
-    margin: 0;
-}
-
 /* Reset CSS */
 * {
   margin: 0;
@@ -11,39 +7,35 @@ body {
 
 /* Header */
 header {
-  background-color: #fff000;
-  box-shadow: 0 0 55px rgba(0,0,0,0.1);
-
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 .slick-slider {
-   position: relative; 
-   top: 0; 
-   left: 0;
-   right: 0;
-   margin-top: -40px;  /* Adjust the value as needed */
-  margin-bottom: 0;  /* Remove any default bottom margin */
+  overflow: hidden;
+  position: relative; 
+  top: 0; 
+  left: 0;
+  right: 0;
 
 }
 
-
-.slick-slider img { 
-  display: block;     /* Prevent extra space below images */
-  max-width: 100%;   /* Images take full width of container */
-  height: auto;       /* Maintain aspect ratio */
+.slick-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 
 .search-bar {
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
-      max-width: 80vw;
+      max-width: 100vw;
       margin-bottom: 0;
-      padding: 4px 0;
-      margin-left: 4px;
-      margin-right: 4px;
+      padding: 3px 0;
+      margin-left: 3px;
+      margin-right: 3px;
       overflow: visible;
     }
 .search-bar input {
