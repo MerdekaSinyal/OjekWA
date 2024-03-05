@@ -59,23 +59,26 @@ main {
 }
 
 .search-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      max-width: 100vw;
-      margin-bottom: 0;
-      padding: 4px 0;
-      margin-left: 4px;
-      margin-right: 4px;
-      overflow: visible;
-    }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100vw;
+  padding: 4px 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  overflow: visible;
+  background-color: #fff; /* Menambahkan warna latar belakang agar search-bar terlihat lebih jelas */
+  box-shadow: 0 0 0px rgba(0,0,0,0.1); /* Menambahkan bayangan untuk efek kedalaman */
+}
+
 .search-bar input {
-  width: 100%;
+  width: calc(100% - 20px); /* Menggunakan calc untuk menghitung lebar input dengan memperhitungkan padding */
   height: 40px;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 50px;
+  outline: none; /* Menghilangkan garis focus saat input aktif */
 }
 
 /* Main */
