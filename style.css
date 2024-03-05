@@ -7,8 +7,10 @@
 
 /* Header */
 header {
-  background-color: #fff;
+  background-color: #fff000;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      height: 0; /* Tambahkan ini untuk mengatur tinggi header menjadi nol */
+
 }
 
 .slick-slider {
