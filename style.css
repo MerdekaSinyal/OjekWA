@@ -1,102 +1,69 @@
-/* Header */
-header {
-  background-color: #fff;
-  box-shadow: 0 0 0px rgba(0,0,0,0.1);
-  margin-bottom: -70px; /* Mengurangi margin bawah header agar mepet ke atas */
-}
-
-.slider-container {
-  margin-top: -50px; /* Keeping the slider close to the top */
-  margin-bottom: -30px; /* Keeping the slider close to the bottom */
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
-/* Main */
-main {
-  padding: 20px; /* Atur padding: atas kanan bawah kiri */
-}
-
-/* Drivers */
-.drivers {
-  margin-top: -20px; /* Mengurangi margin atas drivers agar mepet ke atas */
-  margin-bottom: -50px; /* Mengurangi margin bawah slider agar mepet ke bawah */
-}
-
 /* Reset CSS */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  background-color: #fff000;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  height: 0; /* Tambahkan ini untuk mengatur tinggi header menjadi nol */
 }
 
 
-.slick-slider {
-  width: 100%; /* Set the width to 100% to make it fill the entire viewport */
-  margin: 0 auto; /* Center the slider horizontally */
-}
-
-
-.slick-dots {
-  position: absolute; /* Posisikan .slick-dots secara absolut */
-  bottom: 10px; /* Sesuaikan posisi vertikal, misalnya ke bawah sejauh 10px */
-  left: 0; /* Posisikan ke kiri */
-  right: 0; /* Posisikan ke kanan */
-  display: flex; /* Menggunakan display flex untuk mengatur posisi */
-  justify-content: center; /* Mengatur posisi titik berada di tengah */
-  list-style: none; /* Menghilangkan default styling dari titik */
-  padding: 0; /* Hilangkan padding */
-  margin: 0; /* Hilangkan margin */
-}
-
-
-
-
-.slick-slider img { 
-  width: 100%; 
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Fill the space nicely */
+ .slick-slider {
+    overflow: hidden;
+    position: relative;
+  }
+.slick-slider img {
+    width: 100%;
+    height: auto; /* Ensure aspect ratio is maintained */
+    display: block; /* Remove any space under the image */
+  }
 }
 
 .search-bar {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100vw;
-  padding: 4px 0;
-  margin: 0;
-  background-color: #fff;
-  box-shadow: 0 0 0px rgba(0,0,0,0.1);
+  right: 0;
+  max-width: 100vw;
+  margin-bottom: 0;
+  padding: 3px 0;
+  margin-left: 3px;
+  margin-right: 3px;
+  overflow: visible;
 }
 
 .search-bar input {
-  width: calc(100% - 20px); /* Menggunakan calc untuk menghitung lebar input dengan memperhitungkan padding */
+  width: 100%;
   height: 40px;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 50px;
-  outline: none; /* Menghilangkan garis focus saat input aktif */
 }
 
 /* Main */
 main {
-  padding: 0 20px 0 20px; /* Atur padding: atas kanan bawah kiri */
+  padding: 0 20px 0 20px; /* Adjust padding: top right bottom left */
 }
 
-
+/* Drivers */
+.drivers {
+  margin-bottom: 10px;
+  margin-top: 10px; /* Added margin to separate from slider */
+}
 
 .drivers h2 {
   margin-bottom: 10px;
-      font-size: 17px; /* Atur ukuran font sesuai kebutuhan Anda */
-
+  font-size: 17px;
 }
 
 .driver-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr)); 
-  grid-gap: 1px; 
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-gap: 1px;
 }
 
 .driver-card {
@@ -104,20 +71,19 @@ main {
   border: 0px solid #ccc;
   border-radius: 5px;
   text-align: center;
-  margin: 2px; 
+  margin: 2px;
 }
 
 .driver-card img {
-  width: 100%; 
-  max-width: 50px; 
-  height: auto; 
+  width: 100%;
+  max-width: 50px;
+  height: auto;
 }
 
 .driver-card h3 {
   margin-bottom: 2px;
-  font-size: 10px; 
-      font-weight: normal; /* Mengatur font weight menjadi normal */
-
+  font-size: 10px;
+  font-weight: normal;
 }
 
 .driver-card p {
@@ -131,8 +97,7 @@ main {
 
 .food-menu h2 {
   margin-bottom: 10px;
-      font-size: 17px; /* Atur ukuran font sesuai kebutuhan Anda */
-
+  font-size: 17px;
 }
 
 .filter-bar {
@@ -148,7 +113,7 @@ main {
 /* Menu Grid */
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)); 
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 10px;
 }
 
@@ -161,23 +126,24 @@ main {
 }
 
 .menu-item img {
-  max-width: 100%; 
-  height: auto; 
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
 
 .menu-item h3 {
   margin-bottom: 5px;
-  font-size: 12px; 
-      font-weight: normal; /* Mengatur font weight menjadi normal */
-
+  font-size: 12px;
+  font-weight: normal;
 }
 
 .menu-item p {
   margin-bottom: 0;
-  font-size: 12px; 
-}/* Footer */
+  font-size: 12px;
+}
+
+/* Footer */
 footer {
   background-color: #f5f5f5;
   padding: 10px;
