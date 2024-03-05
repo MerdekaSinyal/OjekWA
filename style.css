@@ -1,13 +1,3 @@
-.header-image {
-  width: 100%; 
-  height: auto; /* Maintain aspect ratio */
-}
-
-.header-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover; /* Cover the whole area while maintaining aspect ratio */
-}
 
 /* Reset CSS */
 * {
