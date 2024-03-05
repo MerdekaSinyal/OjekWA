@@ -10,13 +10,16 @@ body {
 }
 
 .search-bar {
- position: fixed;
- bottom: 0;
- left: 0;
- right: 0;
- max-width: 100%; /* Ensure maximum width is 100% of the screen */
- box-sizing: border-box; /* Include padding & border in width calculation */
- padding: 6px; 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: calc(100% - 20px); /* Ensure maximum width is 100% of the screen minus 20px padding */
+  margin-left: 10px; /* Add left margin */
+  margin-right: 10px; /* Add right margin */
+  margin-bottom: 10px; /* Add bottom margin */
+  box-sizing: border-box; /* Include padding & border in width calculation */
+  padding: 6px;
 }
 
 .search-bar input {
