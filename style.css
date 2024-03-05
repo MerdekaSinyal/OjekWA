@@ -6,10 +6,14 @@ header {
 }
 
 .slider-container {
-  margin-top: -50px; /* Mengurangi margin atas slider agar mepet ke atas */
-  margin-bottom: -30px; /* Mengurangi margin bawah slider agar mepet ke bawah */
+  margin-top: -50px; /* Keeping the slider close to the top */
+  margin-bottom: -30px; /* Keeping the slider close to the bottom */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
-
 /* Main */
 main {
   padding: 20px; /* Atur padding: atas kanan bawah kiri */
@@ -29,12 +33,10 @@ main {
 }
 
 
-.slick-slider { 
-  width: 100%; /* Use width for true full-width responsiveness */
-      position: relative; /* Tambahkan posisi relatif agar .slick-dots dapat diposisikan secara absolut */
-
+.slick-slider {
+  width: 100%; /* Set the width to 100% to make it fill the entire viewport */
+  margin: 0 auto; /* Center the slider horizontally */
 }
-
 
 
 .slick-dots {
