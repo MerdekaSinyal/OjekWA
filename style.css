@@ -37,7 +37,7 @@ main {
 .drivers {
     position: sticky;
   top: 0; /* Stick to the very top of the viewport */
-  margin-bottom: 10px; 
+  margin-bottom: 3px; 
 }
 
 .drivers h2 {
@@ -81,7 +81,7 @@ main {
 .food-menu {
 position: sticky;
   top: 0; /* Stick to the very top of the viewport */
-  margin-bottom: 20px;}
+  margin-bottom: 3px;}
 
 .food-menu h2 {
   margin-bottom: 10px;
