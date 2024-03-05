@@ -10,25 +10,23 @@ body {
 }
 
 .search-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%; /* Mengatur lebar sesuai dengan lebar layar */
-  max-width: calc(100vw - 6px); /* Mengurangi 6px untuk mengakomodasi padding */
-  padding: 3px; /* Padding 3px di semua sisi */
-  overflow-x: visible; /* Ensuring horizontal overflow is visible */
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ max-width: 100%; /* Ensure maximum width is 100% of the screen */
+ box-sizing: border-box; /* Include padding & border in width calculation */
+ padding: 3px; 
 }
-
 
 .search-bar input {
-  width: 100%;
-  height: 25px;
-  padding: 10px;
-  border: 0px;
-  border-radius: 50px;
+ width: 100%;
+ height: 25px;
+ padding: 10px;
+ border: 0px;
+ border-radius: 50px;
+ box-sizing: border-box; /* Inherit box-sizing from search-bar */
 }
-
 
 /* Main */
 main {
