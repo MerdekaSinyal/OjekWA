@@ -29,8 +29,8 @@
     }
 .search-bar input {
   width: 100%;
-  height: 40px;
-  padding: 10px;
+  height: 30px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 50px;
 }
