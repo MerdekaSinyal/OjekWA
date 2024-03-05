@@ -35,8 +35,6 @@ main {
 
 /* Drivers */
 .drivers {
-  position: sticky;
-  top: 0; /* Stick to the very top of the viewport */
   z-index: 1000; /* Ensure drivers stay above other content */
   margin-bottom: 3px;
 }
@@ -79,9 +77,7 @@ main {
 
 /* Food Menu */
 .food-menu {
-  position: sticky;
   top: 0; /* Stick to the very top of the viewport */
-  z-index: 1000; /* Ensure food menu stays above other content */
   margin-bottom: 3px;
 }
 .food-menu h2 {
