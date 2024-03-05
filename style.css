@@ -10,7 +10,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  max-width: calc(100vw - 6px); /* Adjusted for margins */
+  max-width: calc(100vw - 16px); /* Adjusted for margins */
   margin-bottom: 0;
   padding: 3px 0;
   margin-left: 3px;
