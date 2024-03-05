@@ -1,4 +1,8 @@
-
+body {
+    background-color: #efe6dd;
+    margin: 0;
+    padding: 0;
+}
 /* Reset CSS */
 * {
   margin: 0;
