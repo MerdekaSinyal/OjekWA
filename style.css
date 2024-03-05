@@ -6,17 +6,20 @@
 }
 
 .search-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      max-width: 100vw;
-      margin-bottom: 0;
-      padding: 3px 0;
-      margin-left: 3px;
-      margin-right: 3px;
-      overflow: visible;
-    }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: calc(100vw - 6px); /* Adjusted for margins */
+  margin-bottom: 0;
+  padding: 3px 0;
+  margin-left: 3px;
+  margin-right: 3px;
+  overflow-x: visible; /* Ensuring horizontal overflow is visible */
+}
+
+/* If the issue persists, you might want to check for other elements with overflow restrictions or explicitly set overflow for them. */
+
 .search-bar input {
   width: 100%;
   height: 40px;
