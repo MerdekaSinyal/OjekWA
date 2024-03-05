@@ -35,11 +35,12 @@ main {
 
 /* Drivers */
 .drivers {
-    position: sticky;
+  position: sticky;
   top: 0; /* Stick to the very top of the viewport */
-  margin-bottom: 3px; 
+  z-index: 1000; /* Ensure drivers stay above other content */
+  background-color: white; /* Optional: Add a background color to make drivers stand out */
+  margin-bottom: 3px;
 }
-
 .drivers h2 {
   margin-bottom: 10px;
       font-size: 17px; /* Atur ukuran font sesuai kebutuhan Anda */
@@ -79,10 +80,12 @@ main {
 
 /* Food Menu */
 .food-menu {
-position: sticky;
+  position: sticky;
   top: 0; /* Stick to the very top of the viewport */
-  margin-bottom: 3px;}
-
+  z-index: 1000; /* Ensure food menu stays above other content */
+  background-color: white; /* Optional: Add a background color to make menu stand out */
+  margin-bottom: 3px;
+}
 .food-menu h2 {
   margin-bottom: 10px;
       font-size: 17px; /* Atur ukuran font sesuai kebutuhan Anda */
