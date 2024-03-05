@@ -16,7 +16,7 @@ body {
  right: 0;
  max-width: 100%; /* Ensure maximum width is 100% of the screen */
  box-sizing: border-box; /* Include padding & border in width calculation */
- padding: 3px; 
+ padding: 6px; 
 }
 
 .search-bar input {
