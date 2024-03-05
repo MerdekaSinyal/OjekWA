@@ -30,7 +30,26 @@ main {
 
 .slick-slider { 
   width: 100%; /* Use width for true full-width responsiveness */
+      position: relative; /* Tambahkan posisi relatif agar .slick-dots dapat diposisikan secara absolut */
+
 }
+
+
+
+.slick-dots {
+  position: absolute; /* Posisikan .slick-dots secara absolut */
+  bottom: 10px; /* Sesuaikan posisi vertikal, misalnya ke bawah sejauh 10px */
+  left: 0; /* Posisikan ke kiri */
+  right: 0; /* Posisikan ke kanan */
+  display: flex; /* Menggunakan display flex untuk mengatur posisi */
+  justify-content: center; /* Mengatur posisi titik berada di tengah */
+  list-style: none; /* Menghilangkan default styling dari titik */
+  padding: 0; /* Hilangkan padding */
+  margin: 0; /* Hilangkan margin */
+}
+
+
+
 
 .slick-slider img { 
   width: 100%; 
