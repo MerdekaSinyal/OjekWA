@@ -1,73 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Tombol Kirim Pesan</title>
- <style>
-  body {
-   margin: 0;
-   padding: 0;
-   background-color: #F2EFE9FF;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tombol Kirim Pesan</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #F2EFE9FF;
 
-  .container {
-   display: flex;
-   justify-content: space-between;
-   width: 100%;
-   padding: 0px; 
-  }
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0px;
+    }
+    .button {
+      flex: 1;
+      border-radius: 50px;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: white;
+      color: black;
+    }
+   .button:hover {
+   border-radius: 50px; /* Rounded corners on hover */
+  }
 
-  .button {
-   flex: 1;
-   border-radius: 50px;
-   border: none;
-   padding: 10px 20px;
-   font-size: 16px;
-   cursor: pointer;
-   background-color: white;
-   color: black; 
-   transition: border-radius 0.3s, background-color 0.3s; /* Transition for smooth changes */
-  }
+  .button.active { 
+   background-color: #ffffff; /* Use a lighter shade of gray or whichever color you'd like */
+  }
+    .reset {
+          margin-left: 10px; /* Atur jarak kiri gambar */
 
-  .button:hover {
-   border-radius: 50px; /* Rounded corners on hover */
-  }
+      border: none;
+      padding: 0;
+      width: 48px;
+      height: 48px;
+      background-color: transparent;
+      cursor: pointer;
+    }
 
-  .button.active { 
-   background-color: #ffffff; /* Use a lighter shade of gray or whichever color you'd like */
-  }
+    .reset img {
+      width: 100%;
+      height: 100%;
+    }
 
-  .reset { 
-     margin-left: 5px; 
-   border: none;
-   padding: 0;
-   width: 48px;
-   height: 48px;
-   background-color: transparent;
-   cursor: pointer;
-  }
-
-  .reset img {
-   width: 97%;
-   height: 97%;
-  }
- </style>
+    /* The magic happens here! */
+ .button:hover,
+    .button:focus,
+.reset:hover, 
+.reset:focus { 
+  background-color: transparent; /* Maintain transparency */
+  outline: none; /* Remove the focus outline */
+}
+  </style>
 </head>
 <body>
- <div class="container">
-  <button class="button">Kirim Pesan</button> 
-  <button class="reset">
-   <img src="CircleOjekWA.webp" alt="OjekWA">
-  </button>
- </div>
-
- <script>
-   const button = document.querySelector('.button'); // Select the button
-
-   button.addEventListener('click', function() {
-     this.classList.toggle('active'); // Toggle the 'active' class on click
-   });
- </script>
+  <div class="container">
+    <button class="button">Kirim Pesan</button>
+    <button class="reset">
+      <img src="CircleOjekWA.webp" alt="OjekWA">
+    </button>
+  </div>
 </body>
 </html>
