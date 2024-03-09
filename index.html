@@ -44,9 +44,14 @@
       height: 100%;
     }
 
-    .reset:hover {
-      background-color: #f2f2f2;
-    }
+    /* The magic happens here! */
+ .button:hover,
+    .button:focus,
+.reset:hover, 
+.reset:focus { 
+  background-color: transparent; /* Maintain transparency */
+  outline: none; /* Remove the focus outline */
+}
   </style>
 </head>
 <body>
