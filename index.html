@@ -47,13 +47,12 @@
     }
 
     .reset img {
-      width: 100%;
-      height: 100%;
-    }
+    width: 100%; 
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 48px; /* Match the button width if necessary */
+}
 
-    /* The magic happens here! */
- .button:hover,
-    .button:focus,
+  
 .reset:hover, 
 .reset:focus { 
   background-color: transparent; /* Maintain transparency */
