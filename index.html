@@ -1,58 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tombol Kirim Pesan</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #F2EFE9FF;
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Tombol Kirim Pesan</title>
+ <style>
+  body {
+   margin: 0;
+   padding: 0;
+   background-color: #F2EFE9FF;
+  }
 
-    }
-    .container {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      padding: 0px;
-    }
-    .button {
-      flex: 1;
-      border-radius: 50px;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      background-color: white;
-      color: black;
-    }
-   
-    .reset {
-          margin-left: 5px; /* Atur jarak kiri gambar */
+  .container {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   padding: 0px; 
+  }
 
-      border: none;
-      padding: 0;
-      width: 48px;
-      height: 48px;
-      background-color: transparent;
-      cursor: pointer;
-    }
+  .button {
+   flex: 1;
+   border-radius: 50px;
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   background-color: white;
+   color: black; 
+   transition: border-radius 0.3s, background-color 0.3s; /* Transition for smooth changes */
+  }
 
-    .reset img {
-      width: 97%;
-      height: 97%;
-    }
+  .button:hover {
+   border-radius: 50px; /* Rounded corners on hover */
+  }
 
-   
-  </style>
+  .button.active { 
+   background-color: #ffffff; /* Use a lighter shade of gray or whichever color you'd like */
+  }
+
+  .reset { 
+     margin-left: 5px; 
+   border: none;
+   padding: 0;
+   width: 48px;
+   height: 48px;
+   background-color: transparent;
+   cursor: pointer;
+  }
+
+  .reset img {
+   width: 97%;
+   height: 97%;
+  }
+ </style>
 </head>
 <body>
-  <div class="container">
-    <button class="button">Kirim Pesan</button>
-    <button class="reset">
-      <img src="CircleOjekWA.webp" alt="OjekWA">
-    </button>
-  </div>
+ <div class="container">
+  <button class="button">Kirim Pesan</button> 
+  <button class="reset">
+   <img src="CircleOjekWA.webp" alt="OjekWA">
+  </button>
+ </div>
+
+ <script>
+   const button = document.querySelector('.button'); // Select the button
+
+   button.addEventListener('click', function() {
+     this.classList.toggle('active'); // Toggle the 'active' class on click
+   });
+ </script>
 </body>
 </html>
