@@ -1,78 +1,57 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tombol Kirim Pesan</title>
+  <title>Slider Iklan</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #F2EFE9FF;
-
     }
-    .container {
-      display: flex;
-      justify-content: space-between;
+    .slider {
+      position: relative;
       width: 100%;
-      padding: 0px;
     }
-    .button {
-                          margin-top: 5px; 
-
-      flex: 1;
-      border-radius: 50px;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      background-color: white;
-      color: black;
-                  margin-left: 5px; 
-
-    }
-   .button:hover {
-   border-radius: 50px; /* Rounded corners on hover */
-  }
-
-  .button.active { 
-   background-color: #ffffff; /* Use a lighter shade of gray or whichever color you'd like */
-  }
-    .reset {
-                  margin-top: 5px; 
-  
-        margin-left: 5px; 
-          margin-right: 5px; 
-
-      border: none;
+    .slider img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
       padding: 0;
-      width: 45px;
-      height: 45px;
-      background-color: transparent;
-      cursor: pointer;
     }
-
-    .reset img {
-    width: 100%; 
-    height: auto;  /* Maintain aspect ratio */
-    max-width: 45px; /* Match the button width if necessary */
-}
-
-  
-.reset:hover, 
-.reset:focus { 
-  background-color: transparent; /* Maintain transparency */
-  outline: none; /* Remove the focus outline */
-}
+    .ads-text {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 5px 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <button class="button">Kirim Pesan</button>
-    <button class="reset">
-      <img src="CircleOjekWA.webp" alt="OjekWA">
-    </button>
+  <div class="slider">
+    <a href="link1.html">
+      <img id="sliderImage" src="images/slider1.webp" alt="Iklan Pribadi">
+      <div class="ads-text">Ads</div>
+    </a>
   </div>
+
+  <script>
+    const images = ["images/slider1.webp", "images/slider2.webp", "images/slider3.webp"];
+    const links = ["link1.html", "link2.html", "link3.html"];
+    let currentIndex = 0;
+
+    function changeSlide() {
+      currentIndex = (currentIndex + 1) % images.length;
+      document.getElementById('sliderImage').src = images[currentIndex];
+      document.querySelector('.slider a').href = links[currentIndex];
+    }
+
+    setInterval(changeSlide, 5000); // 5000 milliseconds = 5 seconds
+  </script>
 </body>
 </html>
