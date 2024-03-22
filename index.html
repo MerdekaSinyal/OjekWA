@@ -10,22 +10,12 @@
       padding: 0;
       background-color: #F2EFE9FF;
     }
-
-    /* Menghapus efek hover dari semua elemen */
-    *:hover {
-      background-color: inherit !important;
-      color: inherit !important;
-      border-color: inherit !important;
-      border-radius: inherit !important;
-    }
-
     .container {
       display: flex;
       justify-content: space-between;
       width: 100%;
       padding: 0px;
     }
-
     .button {
       flex: 1;
       border-radius: 50px;
@@ -37,7 +27,6 @@
       color: black;
       margin-left: 5px;
     }
-
     .reset {
       margin-top: 5px;
       margin-left: 5px;
@@ -50,7 +39,6 @@
       cursor: pointer;
       border-radius: 50px;
     }
-
     .reset img {
       width: 100%;
       height: auto;
@@ -60,10 +48,20 @@
 </head>
 <body>
   <div class="container">
-    <button class="button">Kirim Pesan</button>
+    <button id="sendMessageButton" class="button">Kirim Pesan</button>
     <button class="reset">
       <img src="pin.webp" alt="OjekWA">
     </button>
   </div>
+
+  <script>
+    // Mendapatkan elemen tombol Kirim Pesan
+    var sendMessageButton = document.getElementById('sendMessageButton');
+
+    // Menambahkan event listener untuk menghapus kelas saat tombol diklik
+    sendMessageButton.addEventListener('click', function() {
+      sendMessageButton.classList.remove('button-hover');
+    });
+  </script>
 </body>
 </html>
